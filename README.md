@@ -4,4 +4,6 @@
 
 **Nome:** Vinicius M. Arantes
 
-2017-01-atividades-viniciusrnt created by GitHub Classroom
+**Semestre:** 2017.1
+
+created by GitHub Classroom
