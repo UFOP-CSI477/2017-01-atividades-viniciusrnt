@@ -2,6 +2,8 @@
 
 ## :computer: Sistemas Web I
 
+Repositório de atividades da disciplina Sistemas Web I.
+
 **Nome:** Vinicius M. Arantes
 
 **Semestre:** 2017.1
