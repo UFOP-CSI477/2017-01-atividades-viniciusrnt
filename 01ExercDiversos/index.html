@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Exercício 1 - Página inicial</title>
+    <link rel="stylesheet" href="css/bootstrap/css/bootstrap.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="jumbotron container text-center">
+      <h1>Menu Principal - Exercícios I</h1>
+    </div>
+    <nav class="navbar navbar-inverse container-fluid">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="menuPrincipal.html">CSI477 - Sistemas Web</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Início</a></li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Tabelas de dados
+            <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="02tabelaCSSInterno.html">Formatado com CSS interno</a></li>
+              <li><a href="02tabelaCSSExterno.html">Formatado com CSS externo</a></li>
+              <li><a href="02tabelaBS.html">Formatado com Bootstrap</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Formulários
+            <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="03formularioCSS.html">Formatado com CSS</a></li>
+              <li><a href="04formularioBS.html">Formatado com Bootstrap</a></li>
+            </ul>
+          </li>
+          <li><a href="09listarAlunos.php">Listar alunos da base de dados</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="row container">
+      <div class="col-md-4">
+        <p>Esta página inclui um conjunto de atividades referentes a disciplina de Sistemas Web I.</p>
+        <a href="index.html">00 e 05 - Menu principal utilizando BS + Grids</a><br>
+        <a href="02tabelaCSSExterno.html">02 - Tabela + CSS Externo</a><br>
+        <a href="02tabelaCSSInterno.html">02 - Tabela + CSS Interno</a><br>
+        <a href="02tabelaBS.html">02 - Tabela + Bootstrap</a><br>
+        <a href="03formularioCSS.html">01 e 03 - Formulário de cadastro + CSS</a><br>
+        <a href="04formularioBS.html">04 - Formulário de cadastro + Bootstrap</a><br>
+        <a href="09listarAlunos.php">09 - Lista de alunos</a><br><br>
+
+		    <p>A validação utilizando jQuery e a exibição dos dados cadastrados (atv. 07 e 08) está incluída nos formulários acima.</p>
+
+      </div>
+      <div class="col-md-4">
+        <p>Nome: Vinicius M. Arantes</p>
+        <p>Matrícula: 14.2.8564</p>
+      </div>
+      <div class="col-md-4" align="right">
+        <img src="img/imagem.png" alt="Logo" width="110%">
+      </div>
+
+    </div>
+
+  </body>
+</html>

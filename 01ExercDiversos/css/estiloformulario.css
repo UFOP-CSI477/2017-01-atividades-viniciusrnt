@@ -1,0 +1,54 @@
+h1 {
+  font-family: Arial;
+  color: #12154f;
+  text-align: center;
+}
+
+#titulo {
+  font-size: 20px;
+  font-family: Arial;
+  color: #744a25;
+}
+
+label {
+  font-family: Arial;
+  font-size: 14px;
+}
+
+body {
+    background-color: #f9f2ec;
+}
+
+input[type=submit], input[type=reset] {
+    width: 100%;
+    background-color: #4d2600;
+    font-size: 14px;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover, input[type=reset]:hover {
+    background-color: #804000;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    font-family: Arial;
+    font-size: 14px;
+    padding: 10px 14px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+    border: 2px solid #754a24;
+}
+
+input[type=radio] {
+    font-family: Arial;
+    font-size: 14px;
+}

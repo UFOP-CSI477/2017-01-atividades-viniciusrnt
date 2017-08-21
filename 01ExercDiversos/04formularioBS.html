@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Formulário</title>
+        <link rel="stylesheet" href="css/bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="style.css">
+        <script src="./js/jquery-3.2.1.js"></script>
+        <script src="./js/funcoes.js"></script>
+    </head>
+    <body>
+      <div class="container">
+        <h1>Formulário</h1>
+          <form class="" action="exibirDados.php" method="post">
+
+            <fieldset>
+              <legend>Dados Pessoais</legend>
+              <label for="nome">Nome: </label>
+              <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                <input type="text" class="form-control" name="nome" placeholder="Digite o seu nome aqui...">
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <br><label for="doc">CPF: </label>
+                  <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-asterisk"></i></span>
+                    <input type="text" name="cpf" class="form-control" placeholder="000.000.000-00">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <br><label for="doc">RG: </label>
+                  <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-asterisk"></i></span>
+                    <input type="text" name="rg" class="form-control">
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-6">
+                  <br><label for="data">Data de nascimento: </label>
+                  <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+                    <input type="text" name="datanasc" class="form-control" placeholder="99/99/9999">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="input-group">
+                    <br><label for="genero">Gênero: </label><br>
+                    <input type="radio" name="genero" value="F" class="radio-inline"> Feminino
+                    <input type="radio" name="genero" value="M" class="radio-inline"> Masculino
+                    <input type="radio" name="genero" value="O" class="radio-inline"> Outro
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+            <br>
+
+            <fieldset>
+              <legend>Endereço</legend>
+              <div class="row">
+                <div class="col-md-4">
+                  <label for="endereco"> Rua: </label>
+                  <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+                    <input type="text" class="form-control" name="rua">
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <label for="endereco"> Número: </label>
+                  <div class="input-group">
+                    <span class="input-group-addon">123</span>
+                    <input type="text" class="form-control" name="numero">
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <label for="endereco"> Bairro: </label>
+                  <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-road"></i></span>
+                    <input type="text" class="form-control" name="bairro">
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <br><label for="endereco"> Estado: </label>
+                    <select name="estado" class="form-control">
+                        <option value="Nenhum">Selecione...</option>
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <br><label for="endereco">Cidade: </label>
+                  <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-map-marker"></i></span>
+                    <input type="text" name="cidade" class="form-control">
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>Contato</legend>
+              <div class="row">
+                <div class="col-md-4">
+                  <label for="contato">Telefone: </label>
+                  <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+                    <input type="text" name="telefone" class="form-control" placeholder="(99) 9999-9999">
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <label for="contato">Celular: </label>
+                  <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-phone"></i></span>
+                    <input type="text" name="celular" class="form-control" placeholder="(99) 9 9999-9999">
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <label for="contato">Social: </label><br>
+                    <input type="checkbox" name="social"> WhatsApp
+                    <input type="checkbox" name="social"> Telegram
+                    <input type="checkbox" name="social"> Signal
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+            <br>
+
+            <fieldset>
+              <legend>Login</legend>
+              <div class="row">
+                <div class="col-md-6">
+                  <label for="email">E-mail: </label>
+                  <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                    <input type="text" name="email" class="form-control" placeholder="usuario@exemplo.com">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <label for="email">Confirmar e-mail: </label>
+                  <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                    <input type="text" name="confirmemail" class="form-control" placeholder="usuario@exemplo.com">
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-6">
+                  <br><label for="usuario">Usuário: </label>
+                  <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                    <input type="text" name="usuario" class="form-control">
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-6">
+                  <br><label for="senha">Senha: </label>
+                  <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-log-in"></i></span>
+                    <input type="password" name="senha" class="form-control">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <br><label for="senha">Confirmar senha: </label>
+                  <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-log-in"></i></span>
+                    <input type="password" name="confirmesenha" class="form-control">
+                  </div>
+                </div>
+              </div>
+            </fieldset><br><br>
+
+            <input type="submit" id="btnCadastrar" value="Cadastrar" class="btn btn-success">
+            <input type="reset" value="Limpar todos os campos" class="btn btn-danger">
+            <a href="index.html" class="btn btn-info">Voltar</a>
+          </form>
+
+        </div>
+    </body>
+</html>

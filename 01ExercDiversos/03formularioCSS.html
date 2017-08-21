@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Formulário</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/estiloformulario.css">
+    </head>
+    <body>
+        <h1>Formulário</h1>
+          <form class="" action="exibirDados.php" method="post">
+
+            <fieldset>
+              <legend id="titulo">Dados Pessoais</legend>
+
+              <label for="nome">Nome: </label>
+              <input type="text" name="nome" placeholder="Digite o seu nome aqui..."><br>
+
+              <label for="doc">CPF: </label>
+              <input type="text" name="cpf" placeholder="000.000.000-00"><br>
+
+              <label for="doc">RG: </label>
+              <input type="text" name="rg"><br>
+
+              <label for="data">Data de nascimento: </label>
+              <input type="text" name="datanasc" placeholder="99/99/9999"><br>
+
+              <label for="genero">Gênero: </label>
+              <input type="radio" name="genero" value="F" class="radio-inline"> Feminino
+              <input type="radio" name="genero" value="M" class="radio-inline"> Masculino
+              <input type="radio" name="genero" value="O" class="radio-inline"> Outro
+            </fieldset>
+            <br>
+
+            <fieldset>
+              <legend id="titulo">Endereço</legend>
+
+              <label for="endereco"> Rua: </label>
+              <input type="text"  name="rua">
+
+              <label for="endereco"> Número: </label>
+              <input type="text"  name="numero">
+
+              <label for="endereco"> Bairro: </label>
+              <input type="text"  name="bairro">
+
+              <br><label for="endereco"> Estado: </label>
+              <select name="estado" >
+                <option value="0">Selecione...</option>
+                <option value="1">Acre</option>
+                <option value="2">Alagoas</option>
+                <option value="3">Amapá</option>
+                <option value="4">Amazonas</option>
+                <option value="5">Bahia</option>
+                <option value="6">Ceará</option>
+                <option value="7">Distrito Federal</option>
+                <option value="8">Espírito Santo</option>
+                <option value="9">Goiás</option>
+                <option value="10">Maranhão</option>
+                <option value="11">Mato Grosso</option>
+                <option value="12">Mato Grosso do Sul</option>
+                <option value="13">Minas Gerais</option>
+                <option value="14">Pará</option>
+                <option value="15">Paraíba</option>
+                <option value="16">Paraná</option>
+                <option value="17">Pernambuco</option>
+                <option value="18">Piauí</option>
+                <option value="19">Rio de Janeiro</option>
+                <option value="20">Rio Grande do Norte</option>
+                <option value="21">Rio Grande do Sul</option>
+                <option value="22">Rondônia</option>
+                <option value="23">Roraima</option>
+                <option value="24">Santa Catarina</option>
+                <option value="25">São Paulo</option>
+                <option value="26">Sergipe</option>
+                <option value="27">Tocantins</option>
+              </select>
+
+              <br><label for="endereco">Cidade: </label>
+              <input type="text" name="cidade">
+
+            </fieldset><br>
+
+            <fieldset>
+              <legend id="titulo">Contato</legend>
+
+              <label for="contato">Telefone: </label>
+              <input type="text" name="telefone"  placeholder="(99) 9999-9999">
+
+              <label for="contato">Celular: </label>
+              <input type="text" name="celular"  placeholder="(99) 9 9999-9999">
+
+              <label for="contato">Social: </label><br>
+              <input type="checkbox" name="social"> WhatsApp
+              <input type="checkbox" name="social"> Telegram
+              <input type="checkbox" name="social"> Signal
+
+            </fieldset>
+            <br>
+
+            <fieldset>
+              <legend id="titulo">Login</legend>
+
+              <label for="email">E-mail: </label>
+              <input type="text" name="email"  placeholder="usuario@exemplo.com">
+
+              <label for="email">Confirmar e-mail: </label>
+              <input type="text" name="confirmemail"  placeholder="usuario@exemplo.com">
+
+              <br><label for="usuario">Usuário: </label>
+              <input type="text" name="usuario" >
+
+              <br><label for="senha">Senha: </label>
+              <input type="password" name="senha" >
+
+              <br><label for="senha">Confirmar senha: </label>
+              <input type="password" name="confirmesenha" >
+
+            </fieldset><br><br>
+
+            <input type="submit" value="Cadastrar" class="btn btn-success">
+            <input type="reset" value="Limpar todos os campos" class="btn btn-danger">
+            <a href="index.html" type="button">Voltar ao menu principal</a>
+          </form>
+
+        </div>
+    </body>
+</html>

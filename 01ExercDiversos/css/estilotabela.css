@@ -1,0 +1,39 @@
+h1 {
+  font-family: Arial;
+  color: #26734b;
+  text-align: center;
+  text-shadow: black 1px -1px;
+}
+
+table, th, td {
+  font-family: Arial;
+  font-size: 15px;
+  border-style: ridge;
+}
+
+th, td {
+  padding: 3px;
+}
+
+table {
+  width: 100%;
+}
+
+tr:hover {
+  background-color: #f3f3f3;
+}
+
+a {
+  font-size: 15px;
+  font-family: sans-serif;
+  color: #336600;
+}
+
+.background {
+  background-color: #b3e6cc;
+}
+
+.titulo {
+  background-color: #66cc99;
+  font-weight: bold;
+}
